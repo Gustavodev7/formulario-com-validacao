@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <!-- Define a codificação de caracteres para que acentos e símbolos sejam exibidos corretamente -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Torna a página responsiva em diferentes dispositivos -->
+  <title>Formulário de Validação</title>
+  <!-- Título da página, aparece na aba do navegador -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Link para o arquivo CSS que estiliza o formulário -->
+</head>
+<body>
+  <div class="form-container">
+    <h1>Cadastro</h1>
+    <form id="registrationForm">
+      <!-- Grupo para o campo Nome -->
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <!-- O elemento <small> abaixo exibirá a mensagem de erro, se houver -->
+        <small class="error" id="nameError"></small>
+      </div>
+
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <small class="error" id="emailError"></small>
+      </div>
+
+      
+      <div class="form-group">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+        <small class="error" id="passwordError"></small>
+      </div>
+
+     <button type="submit">Enviar</button>
+      
+    </form>
+  </div>
+  
+  <script src="./src/script.js"></script>
+</body>
+</html>
